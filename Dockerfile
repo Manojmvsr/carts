@@ -5,7 +5,7 @@ WORKDIR /opt/carts
 COPY . .
 
 RUN mvn package \
-	&& mv targets/carts.jar /run \
+	&& mv target/carts.jar /run \
 	&& rm -rf *
 
 EXPOSE 80
